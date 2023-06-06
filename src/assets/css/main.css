@@ -1,0 +1,80 @@
+@import '@css/include/fonts.css';
+@import '@css/include/initial.css';
+@import '@css/variables.css';
+@import '@css/classes.css';
+@import '@css/components.css';
+@import-normalize;
+
+:root {
+  /* 
+  COLOR PALETTE
+*/
+  --color-wai-focused: rgba($RGB_PURPLE_1, 1);
+
+  --color-primary: rgba($RGB_BLACK_1, 1);
+  --color-secondary: rgba($RGB_WHITE_1, 1);
+  --color-tertiary: rgba($RGB_PURPLE_1, 1);
+  --color-tertiary-trans: rgba($RGB_PURPLE_1, 0.6);
+
+  --black-primary: rgba($RGB_BLACK_1, 1);
+  --black-drop-shadow: rgba(20, 20, 20, 0.6);
+  --white-primary: rgba($RGB_WHITE_1, 1);
+  --white-shadow: rgba($RGB_WHITE_1, 0.4);
+  --gray-primary: rgba($RGB_GRAY_1, 1);
+  --gray-trans: rgba($RGB_GRAY_2, 0.85);
+  --gray-1: rgba($RGB_GRAY_1, 1);
+  --gray-2: rgba($RGB_GRAY_2, 1);
+  --gray-3: rgba($RGB_GRAY_3, 1);
+
+  --red-1: rgba($RGB_RED_1, 1);
+
+  /* 
+  FONT SIZING 
+*/
+  --font-xx-sm: 0.45rem; /* ~7.2px */
+  --font-x-sm: 0.75rem; /* ~12px */
+  --font-sm: 0.82rem; /* ~13px */
+  --font-md: 1rem; /* ~16px */
+  --font-lg: 1.25rem; /* ~20px */
+  --font-x-lg: 1.5rem; /* ~24px */
+  --font-h-x-lg: 1.8rem; /* ~28.8px */
+  --font-xx-lg: 2rem; /* ~32px */
+
+  /* 
+  FONT SETTINGS
+*/
+  --font-primary: $FONT_TIE_WING, $FONT_SF_DISTANT_GALAXY, 'Roboto', 'Times New Roman',
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-secondary: $FONT_EPISODE_1, 'Segoe UI', 'Roboto', 'Oxygen', serif;
+  --font-heading: var(--font-primary);
+  --font-body: var(--font-secondary);
+  --font-btn: $FONT_SF_DISTANT_GALAXY, var(--font-primary);
+  --font-help-text: $FONT_AUREK_BESH, $FONT_AUREK_BESH_NARROW, var(--font-primary);
+
+  /*
+  LAYOUT SETTINGS
+*/
+  --page-max-w: $PG_MAX_WIDTH;
+  --page-pad-h: 24px;
+  --page-pad-v: 40px;
+  @media (--tab-md) {
+    --page-pad-h: 40px;
+    --page-pad-v: 60px;
+  }
+  @media (--desk-sm) {
+    --page-pad-h: 80px;
+    --page-pad-v: 120px;
+  }
+  --section-gap: 10vh;
+  --nav-height: 60px;
+
+  /*
+  STYLE SETTINGS
+*/
+  --border-rad: 4px;
+  --border-rad-circle: 100px;
+  --btn-pad-standard: 9px 24px 7px;
+  --btn-pad-outline: 8px 24px 6px;
+  --btn-opa-inactive: 0.6;
+}

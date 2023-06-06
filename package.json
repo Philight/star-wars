@@ -1,0 +1,47 @@
+{
+  "name": "star-wars",
+  "author": "Filip Lai",
+  "version": "0.0.1",
+  "type": "module",
+  "config": {
+    "PORT": "4000",
+    "BASENAME": "/"
+  },
+  "scripts": {
+    "start": "ver && vite --port %npm_package_config_port% || vite --port $npm_package_config_port",
+    "start:dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/**/*.js src/**/*.jsx",
+    "lint:fix": "eslint src/**/*.js src/**/*.jsx --fix",
+    "prettier": "prettier --check ./**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc",
+    "prettier:fix": "prettier --write ./**/*.{js,jsx,ts,tsx,css,scss,md,json} --config ./.prettierrc",
+    "format": "npm run prettier:fix && npm run lint:fix"
+  },
+  "dependencies": {
+    "framer-motion": "^10.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-react": "^7.32.2",
+    "postcss-import": "^15.1.0",
+    "postcss-mixins": "^9.0.4",
+    "postcss-nested": "^6.0.1",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^8.0.1",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "2.8.8",
+    "vite": "^4.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

@@ -1,0 +1,94 @@
+@define-mixin includeParent {
+  & {
+    @mixin-content;
+  }
+}
+
+@define-mixin flex-grid $columns, $grid-gap {
+  .flex-item {
+    flex-basis: calc(((100% - ($columns - 1) * $grid-gap)) / $columns);
+    margin-right: $grid-gap;
+    margin-bottom: $grid-gap;
+    @media (--tab-md) {
+      flex-basis: calc(((100% - ($columns + 1 - 1) * $grid-gap)) / ($columns + 1)); /* + 1 column */
+    }
+    @media (--desk-sm) {
+      flex-basis: calc(((100% - (4 - 1) * $grid-gap)) / (4)); /* + 1 column */
+    }
+  }
+
+  /* Last FlexItem margins */
+
+  &:not(.flex-col) {
+    .flex-item:nth-child($(columns)n) {
+      margin-right: 0;
+    }
+    .flex-item:nth-last-child(-n + $columns) {
+      margin-bottom: 0;
+    }
+    @media (--tab-md) {
+      .flex-item:nth-child($(columns)n) {
+        margin-right: $grid-gap;
+      }
+      .flex-item:nth-child(3n) {
+        margin-right: 0;
+      }
+      .flex-item:nth-last-child(-n + $columns) {
+        margin-bottom: $grid-gap;
+      }
+      .flex-item:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+      }
+    }
+    @media (--desk-sm) {
+      .flex-item:nth-child(3n) {
+        margin-right: $grid-gap;
+      }
+      .flex-item:nth-child(4n) {
+        margin-right: 0;
+      }
+      .flex-item:nth-last-child(-n + 3) {
+        margin-bottom: $grid-gap;
+      }
+      .flex-item:nth-last-child(-n + 4) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &:is(.flex-col) {
+    .flex-item:nth-child($(columns)n) {
+      margin-bottom: 0;
+    }
+    .flex-item:nth-last-child(-n + $columns) {
+      margin-right: 0;
+    }
+    @media (--tab-md) {
+      .flex-item:nth-child($(columns)n) {
+        margin-bottom: $grid-gap;
+      }
+      .flex-item:nth-child(3n) {
+        margin-bottom: 0;
+      }
+      .flex-item:nth-last-child(-n + $columns) {
+        margin-right: $grid-gap;
+      }
+      .flex-item:nth-last-child(-n + 3) {
+        margin-right: 0;
+      }
+    }
+    @media (--desk-sm) {
+      .flex-item:nth-child(3n) {
+        margin-bottom: $grid-gap;
+      }
+      .flex-item:nth-child(4n) {
+        margin-bottom: 0;
+      }
+      .flex-item:nth-last-child(-n + 3) {
+        margin-right: $grid-gap;
+      }
+      .flex-item:nth-last-child(-n + 4) {
+        margin-right: 0;
+      }
+    }
+  }
+}

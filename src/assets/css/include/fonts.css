@@ -1,0 +1,43 @@
+@import '@css/fonts/sf-distant-galaxy.css';
+
+@font-face {
+  font-family: 'EPISODE I';
+  src: url('@fonts/episode-one/EPISODEI.woff2') format('woff2'),
+    url('@fonts/episode-one/EPISODEI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Aurek-Besh Narrow';
+  src: url('@fonts/aurek-besh/Aurek-BeshNarrow.eot');
+  src: url('@fonts/aurek-besh/Aurek-BeshNarrow.eot?#iefix') format('embedded-opentype'),
+    url('@fonts/aurek-besh/Aurek-BeshNarrow.woff2') format('woff2'),
+    url('@fonts/aurek-besh/Aurek-BeshNarrow.woff') format('woff'),
+    url('@fonts/aurek-besh/Aurek-BeshNarrow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aurek-Besh';
+  src: url('@fonts/aurek-besh/Aurek-Besh.eot');
+  src: url('@fonts/aurek-besh/Aurek-Besh.eot?#iefix') format('embedded-opentype'),
+    url('@fonts/aurek-besh/Aurek-Besh.woff2') format('woff2'),
+    url('@fonts/aurek-besh/Aurek-Besh.woff') format('woff'),
+    url('@fonts/aurek-besh/Aurek-Besh.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TIE-Wing';
+  src: url('@fonts/tie-wing/TIEWing.eot');
+  src: url('@fonts/tie-wing/TIEWing.eot?#iefix') format('embedded-opentype'),
+    url('@fonts/tie-wing/TIEWing.woff2') format('woff2'),
+    url('@fonts/tie-wing/TIEWing.woff') format('woff'),
+    url('@fonts/tie-wing/TIEWing.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

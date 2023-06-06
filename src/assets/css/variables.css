@@ -1,0 +1,59 @@
+/* COLOR PALETTE */
+
+$RGB_BLACK_1: 20, 20, 20; /* #2b3031 */
+$RGB_WHITE_1: 252, 252, 252; /* #FCFCFC */
+$RGB_GRAY_1: 106, 106, 106; /* #6a6a6a */
+$RGB_GRAY_2: 56, 56, 56; /* #6a6a6a */
+$RGB_GRAY_3: 48, 48, 48; /* #6a6a6a */
+
+$RGB_YELLOW_1: 255, 232, 31; /* #364951 */
+$RGB_RED_1: 299, 9, 17; /* #364951 */
+
+$RGB_BLUE_1: 76, 90, 100; /* #4c5a64 */
+
+$RGB_GREEN_2: 30, 56, 69; /* #1e3845 */
+$RGB_PURPLE_1: 194, 0, 186; /* #c200ba */
+
+/* FONT PALETTE */
+
+$FONT_AUREK_BESH: 'Aurek-Besh';
+$FONT_AUREK_BESH_NARROW: 'Aurek-Besh Narrow';
+$FONT_EPISODE_1: 'EPISODE I';
+$FONT_TIE_WING: 'TIE-Wing';
+$FONT_SF_DISTANT_GALAXY: 'SF Distant Galaxy';
+$FONT_SF_DISTANT_GALAXY_OUTLINE: 'SF Distant Galaxy Outline';
+$FONT_SF_DISTANT_GALAXY_ALT_OUTLINE: 'SF Distant Galaxy AltOutline';
+$FONT_SF_DISTANT_GALAXY_ALTERNATE: 'SF Distant Galaxy Alternate';
+$FONT_SF_DISTANT_GALAXY_SYMBOLS: 'SF Distant Galaxy Symbols';
+
+$FONT_XX_SM: 0.5rem; /* ~8px */
+$FONT_X_SM: 0.75rem; /* ~12px */
+$FONT_SM: 0.82rem; /* ~13px */
+$FONT_MD: 1rem; /* ~16px */
+$FONT_LG: 1.25rem; /* ~20px */
+$FONT_X_LG: 1.5rem; /* ~24px */
+$FONT_XX_LG: 2rem; /* ~32px */
+
+/* DEVICE BREAKPOINTS (Mobile first) */
+
+$BP_MOB_LG: 480px;
+$BP_TAB_SM: 600px;
+$BP_TAB_MD: 768px;
+$BP_TAB_LG: 900px;
+$BP_DESK_SM: 1280px;
+$BP_DESK_MD: 1440px;
+$BP_DESK_LG: 1920px;
+
+/* LAYOUT CONSTANTS */
+
+$PG_MAX_WIDTH: 1440px;
+
+@custom-media --mob-lg screen and (width >= $BP_MOB_LG);
+@custom-media --tab-sm screen and (width >= $BP_TAB_SM);
+@custom-media --tab-md screen and (width >= $BP_TAB_MD);
+@custom-media --tab-lg screen and (width >= $BP_TAB_LG);
+@custom-media --desk-sm screen and (width >= $BP_DESK_SM);
+@custom-media --desk-md screen and (width >= $BP_DESK_MD);
+@custom-media --desk-lg screen and (width >= $BP_DESK_LG);
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6;
