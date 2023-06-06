@@ -16,7 +16,8 @@ const CardsPagination = (props) => {
     let multiplier = 0;
 
     if (currentPage === 1) {
-      multiplier = 0; // currentPage-1
+      // currentPage-1
+      multiplier = 0;
     } else if ([ 2, 3 ].includes(currentPage)) {
       multiplier = 1;
     } else if (currentPage === cardsArrLength - 2) {
@@ -26,7 +27,8 @@ const CardsPagination = (props) => {
       // 11 => 2 // 12 => 3 // 13 => 4
       multiplier = 4;
     } else if (currentPage === cardsArrLength - 1 || currentPage >= 4) {
-      multiplier = 3; // currentPage-1(-i)
+      // currentPage-1(-i)
+      multiplier = 3;
     }
 
     return `translateX(${multiplier * 100}%)`;

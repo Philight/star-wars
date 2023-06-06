@@ -75,7 +75,8 @@ const Icon = forwardRef((props, ref) => {
       src: getIcon()
     }
     : {
-      src: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=`, // 1x1 pixel PNG uri
+      // 1x1 pixel PNG uri
+      src: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=`,
       style: {
         backgroundColor: color,
         backgroundImage: `url(${getIcon()}) no-repeat center`,

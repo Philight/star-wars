@@ -26,6 +26,7 @@ const DataProvider = (props) => {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line no-console
     console.log(`### DataProvider ALL DATA`, data);
   }, [ data ]);
 

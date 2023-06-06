@@ -5,7 +5,7 @@ import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
 import Icon from '@components/graphic/Icon';
 import Shape from '@components/graphic/Shape';
 import Layer from '@components/graphic/Layer';
-import useDeviceDimensions from '@utils/useDeviceDimensions.js';
+import useDeviceDimensions from '@utils';
 
 const Navigation = (props) => {
   let { className, layout, currentTransStage, setCurrentTransStage } = props;

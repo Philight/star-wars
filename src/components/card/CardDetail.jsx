@@ -22,15 +22,6 @@ const CardDetail = (props) => {
 
   const cardId = window.location.pathname.split('/character/')[1];
 
-  const initialRun = useRef(true);
-  useEffect(() => {
-    if (initialRun.current) {
-      initialRun.current = false;
-      getDataById(contextData.data.people, cardId);
-      setIndicatorStyle({ width: tabRef.current.getBoundingClientRect().width, left: 0 });
-    }
-  }, []);
-
   const getDataById = (DATA_ARRAY, id) => {
     for (let dataObj of DATA_ARRAY) {
       if (dataObj.url.split('/people/')[1].split('/')[0] === id) {
@@ -51,6 +42,15 @@ const CardDetail = (props) => {
       }
     }
   };
+
+  const initialRun = useRef(true);
+  useEffect(() => {
+    if (initialRun.current) {
+      initialRun.current = false;
+      getDataById(contextData.data.people, cardId);
+      setIndicatorStyle({ width: tabRef.current.getBoundingClientRect().width, left: 0 });
+    }
+  }, []);
 
   const getRoman = (number) => {
     switch (number) {

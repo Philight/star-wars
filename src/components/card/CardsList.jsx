@@ -9,8 +9,8 @@ import CardsPagination from '@components/card/CardsPagination';
 import Filter from '@components/util/Filter';
 
 import { getPageMaxPosts } from '@data';
-import { createArrayGroups } from '@utils/createArrayGroups.js';
-import useDeviceDimensions from '@utils/useDeviceDimensions.js';
+import { createArrayGroups } from '@utils';
+import useDeviceDimensions from '@utils';
 
 const CardsList = (props) => {
   let { className, searchValue } = props;
@@ -20,7 +20,7 @@ const CardsList = (props) => {
   const context = useContext(DataContext);
   const DATA_AVATARS = context.data.people;
 
-  const [ filteredData, setFilteredData ] = useState(DATA_AVATARS); // [ [], [], [] ]
+  const [ filteredData, setFilteredData ] = useState(DATA_AVATARS);
   const [ currentPage, setCurrentPage ] = useState(1);
 
   const COUNT_PER_PAGE = getPageMaxPosts(DEVICE_TYPE);
@@ -28,14 +28,12 @@ const CardsList = (props) => {
   const COLUMNS = [
     { name: 'height', type: 'range' },
     { name: 'mass', type: 'range' },
-    /*
     { name: 'hair_color', type: 'select' },
     { name: 'skin_color', type: 'select' },
     { name: 'eye_color', type: 'select' },
     { name: 'gender', type: 'radio' },
     { name: 'homeworld', type: 'radio' },
     { name: 'films', type: 'select' },
-*/
     { name: 'vehicles', type: 'select' }
   ];
 

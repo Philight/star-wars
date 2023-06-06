@@ -10,7 +10,8 @@ export const fetchAllPages = async (url) => {
   const pageLength = results.length;
 
   const pages = [
-    results, // first page
+    // first page
+    results,
     ...(await Promise.all(
       [
         // -1 because first page already fetched

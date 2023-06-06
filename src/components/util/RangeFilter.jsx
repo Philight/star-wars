@@ -74,7 +74,8 @@ const RangeFilter = (props) => {
     Object.keys(values).sort((a, b) => {
       return a - b;
     });
-  const step = 100 / (filterValues?.length - 1); // percentage
+  // percentage
+  const step = 100 / (filterValues?.length - 1);
 
   useEffect(() => {
     if (!!updateFilter && values) {
