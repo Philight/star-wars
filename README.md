@@ -5,7 +5,7 @@
 ![](https://github.com/Philight/star-wars/blob/main/preview/preview.gif)
 
 ## 🖋️ SKETCH
-- Figma: https://www.figma.com/file/CZf4JPNPrF71eeVxjmtoO2/Star-Wars-Avatars?type=design&node-id=0%3A1&t=JUxTseDWF3Lzn4q4-1
+- Figma: <a href="https://www.figma.com/file/CZf4JPNPrF71eeVxjmtoO2/Star-Wars-Avatars?type=design&node-id=0%3A1&t=JUxTseDWF3Lzn4q4-1" target="_blank">Design doc</a>
 
 ## 🧰 BUILT WITH
 - React.js [ *React Router, Hooks, Refs, Context, Reducer* ]
